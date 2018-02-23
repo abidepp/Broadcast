@@ -14,6 +14,6 @@ public class MyBroadcast extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         Log.i("test","onReceive called");
-        Toast.makeText(context, "broadcast triggered", Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "broadcast triggered--->find the comments in the code", Toast.LENGTH_LONG).show();
     }
 }

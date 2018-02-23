@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     //to just register a broadcast through code and not using manifest file-----
     //however registering only in manifest files also works--------
-    //below examples are for creating a custom broadcast
+    //below examples are for creating a custom broadcast through code
     @Override
     protected void onStart() {
         super.onStart();
@@ -62,4 +62,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
       //  unregisterReceiver(broadcastReceiver);
     }
+
+    //----******FINAL NOTE****-----
+    //FIND THE EXPORTED ATTRIBUTE IN MANIFEST FILE---> THAT INDICATES IF YOUR BROADCAST IS LOCAL OR GLOBAL.
 }
