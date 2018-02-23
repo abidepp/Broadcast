@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onReceive(Context context, Intent intent) {
                         Bundle bundle = getResultExtras(true);
                         String tip = bundle.getString(message);
-                        tip = (tip == null?  "BUNNY!!" : tip+"work on your jokes :P");
+                        tip = (tip == null?  "hola!!" : tip+"From Main Activity :P");
                         bundle.putString(message, tip);
                         Toast.makeText(context,""+message,Toast.LENGTH_LONG).show();
                     }
